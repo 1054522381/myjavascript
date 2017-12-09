@@ -1,0 +1,13 @@
+﻿<script>
+	var name = "Outter";
+　　var object = {
+　　　　name : "Inner",
+　　　　getNameFunc : function(){
+　　　　　　var that = this;
+　　　　　　return function(){
+　　　　　　　　return that.name;
+　　　　　　};
+　　　　}
+　　};
+	document.write(object.getNameFunc()()); //Inner
+</script>

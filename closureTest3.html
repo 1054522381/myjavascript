@@ -1,0 +1,14 @@
+﻿<script>
+　　function f1(){
+　　　　var n = 999;
+　　　　nAdd = function(){n+=1}
+　　　　function f2(){
+　　　　　　return n;
+　　　　}
+　　　　return f2;
+　　}
+　　var result = f1();
+　　document.write("f1()=>" + result() + "<br>"); // 999
+	nAdd()
+　　document.write("f1() after rnAdd()=>" + result()); // 1000
+</script>
